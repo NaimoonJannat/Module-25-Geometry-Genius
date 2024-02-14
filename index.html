@@ -13,17 +13,11 @@
     <header>
         <div class="navbar bg-[#1090D81A] rounded-xl w-11/12 p-6 my-6 mx-auto">
             <div class="navbar-start">
-                <div class="dropdown">
-                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h8m-8 6h16" />
-                        </svg>
-                    </div>
+                <div >
+                    <p class="btn btn-ghost text-lg h-7"><span class="text-2xl font-bold">Interactive</span><br>
+                        Geometry Genius</p>
                 </div>
-                <a class="btn btn-ghost text-xl">Interactive <br>
-                    Geometry Genius</a>
+               
             </div>
 
             <div class="navbar-end">
@@ -34,11 +28,12 @@
 
     <main>
         <div class="w-11/12 mx-auto p-6 my-10">
-            <div class="flex">
+            <div class="flex gap-6">
                 <!-- grid cards container  -->
-                <div class="grid grid-cols-3 gap-4">
+                <div class="grid grid-cols-3 gap-4 w-3/4">
+
                     <!-- first card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/triangle.png" alt="triangle" class="rounded-xl" />
                         </figure>
@@ -52,37 +47,37 @@
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn btn-primary w-full my-12">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- second card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/rectangle.png" alt="rectangle" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rectangle</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = w X l</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="w" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="l" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn btn-primary my-12 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- third card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/parallelogram.png" alt="parallelogram" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Parallelogram</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = b X h</p>
                             <div class="flex gap-2 w-11/12">
                                 <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
@@ -90,72 +85,72 @@
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn my-12 btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- fourth card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/rhombus.png" alt="Rhombus" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Rhombus</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = 0.5 X d1 X d2</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="d1" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="d2" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn my-12 btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- fifth card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/pentagon.png" alt="Pentagon" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Pentagon</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = 0.5 X p X b</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="p" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn my-12 btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                     <!-- sixth card  -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
+                    <div class="card bg-base-100 shadow-xl">
                         <figure class="px-10 pt-10">
                             <img src="./images/ellipse.png" alt="ellipse" class="rounded-xl" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Ellipse</h2>
-                            <p>Area (A) = 0.5 X b X h</p>
+                            <p>Area (A) = &pi;ab</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="a" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full">Calculate</button>
+                                <button class="btn my-12 btn-primary w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
                 <!-- text area  -->
-                <div>
-                    <h1>Area Calculation</h1>
+                <div class="border-2 border-gray-300 w-1/4 p-4 text-center">
+                    <h1 class="text-xl font-bold underline">Area Calculation</h1>
                 </div>
             </div>
 
