@@ -83,16 +83,16 @@
                             <h2 class="card-title">Parallelogram</h2>
                             <p>Area (A) = b X h</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="paraBase" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="paraHeight" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div>
-                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                                <p class="text-xl">Area: <span id="paraArea"></span>cm<sup>2</sup></p>
                             </div>
                             <div class="card-actions w-full">
-                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
+                                <button onclick="para()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -105,16 +105,16 @@
                             <h2 class="card-title">Rhombus</h2>
                             <p>Area (A) = 0.5 X d1 X d2</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="d1" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="rhombusBase" placeholder="d1" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="d2" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="rhombusHeight" placeholder="d2" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div>
-                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                                <p class="text-xl">Area: <span id="rhombusArea"></span>cm<sup>2</sup></p>
                             </div>
                             <div class="card-actions w-full">
-                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
+                                <button onclick="rhombus()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -127,16 +127,16 @@
                             <h2 class="card-title">Pentagon</h2>
                             <p>Area (A) = 0.5 X p X b</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="p" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="pentaBase" placeholder="p" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="pentaHeight" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div>
-                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                                <p class="text-xl">Area: <span id="pentaArea"></span>cm<sup>2</sup></p>
                             </div>
                             <div class="card-actions w-full">
-                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
+                                <button onclick="pentagon()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -149,16 +149,16 @@
                             <h2 class="card-title">Ellipse</h2>
                             <p>Area (A) = &pi;ab</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="a" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="ellipseBase" placeholder="a" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="ellipseHeight" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
                             <div>
-                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                                <p class="text-xl">Area: <span id="ellipseArea"></span>cm<sup>2</sup></p>
                             </div>
                             <div class="card-actions w-full">
-                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
+                                <button onclick="ellipse()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
