@@ -39,13 +39,16 @@
                             <h2 class="card-title">Triangle</h2>
                             <p>Area (A) = 0.5 X b X h</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg" id="triBase">
                                 <p>cm</p>
-                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg" id="triHeight">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area : <span id="triAreaId"></span> cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary w-full my-12">Calculate</button>
+                                <button onclick="triangleCalculate()" class="btn btn-primary w-full lg:my-6">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -58,13 +61,16 @@
                             <h2 class="card-title">Rectangle</h2>
                             <p>Area (A) = w X l</p>
                             <div class="flex gap-2 w-11/12">
-                                <input type="text" placeholder="w" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="rectWidth" placeholder="w" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
-                                <input type="text" placeholder="l" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
+                                <input type="text" id="rectHeight" placeholder="l" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn btn-primary my-12 w-full">Calculate</button>
+                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -82,8 +88,11 @@
                                 <input type="text" placeholder="h" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn my-12 btn-primary w-full">Calculate</button>
+                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -101,8 +110,11 @@
                                 <input type="text" placeholder="d2" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn my-12 btn-primary w-full">Calculate</button>
+                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -120,8 +132,11 @@
                                 <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn my-12 btn-primary w-full">Calculate</button>
+                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -139,8 +154,11 @@
                                 <input type="text" placeholder="b" class="w-1/2 p-2 bg-[#F1F1F1] rounded-lg">
                                 <p>cm</p>
                             </div>
+                            <div>
+                                <p class="text-xl">Area: <span id="rectArea"></span>cm<sup>2</sup></p>
+                            </div>
                             <div class="card-actions w-full">
-                                <button class="btn my-12 btn-primary w-full">Calculate</button>
+                                <button onclick="rectangleCalculate()" class="btn btn-primary my-6 w-full">Calculate</button>
                             </div>
                         </div>
                     </div>
@@ -155,6 +173,7 @@
         </div>
     </main>
     <footer></footer>
+    <script src="./script.js"></script>
 </body>
 
 </html>
